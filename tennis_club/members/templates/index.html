@@ -8,5 +8,12 @@
 <body>
    <h1>Hello World!</h1> 
    <p>Welcome to the Clausthal Tennis Club </p>
+   <h2>Here are our Members</h2>
+   <ol>
+    {% for x in mymembers %}
+        <li> <a href="details/{{x.id}}"> {{x.first_name}} {{x.last_name}} </a></li>
+    {% endfor %}
+   </ol>
+   
 </body>
 </html>
